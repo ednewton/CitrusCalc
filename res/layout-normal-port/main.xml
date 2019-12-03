@@ -50,7 +50,7 @@
         <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/gpdLabel"
                   android:id="@+id/gpdLabel" android:textSize="@dimen/mediumText" android:padding="5dp"
                   android:layout_weight=".7"/>
-        <EditText
+        <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/gpd" android:layout_weight=".3" android:autoText="false" android:padding="5dp"
@@ -63,7 +63,7 @@
         <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/timerLabel"
                   android:id="@+id/minutesLabel" android:textSize="@dimen/mediumText" android:padding="5dp"
                   android:layout_weight=".7"/>
-        <EditText android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/minutesAtRate"
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/minutesAtRate"
                   android:layout_weight=".3" android:autoText="false" android:padding="5dp"
                   android:textSize="@dimen/mediumText" android:editable="false" android:enabled="true"
                   android:gravity="center_horizontal" android:inputType="numberDecimal"

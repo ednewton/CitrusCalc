@@ -17,8 +17,8 @@ import java.text.SimpleDateFormat;
 public class MainActivity extends Activity {
     private static final String DECIMAL_FORMAT = "%3.1f";
     private MainActivitySO so;
-    private EditText gpd;
-    private EditText timerValue;
+    private TextView gpd;
+    private TextView timerValue;
     private final Context context = this;
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm:ss");
     private CountDownTimer countDownTimer;
@@ -42,8 +42,8 @@ public class MainActivity extends Activity {
         createTypeControl();
 
         // grab the output fields that we'll update
-        gpd = (EditText) findViewById(R.id.gpd);
-        timerValue = (EditText) findViewById(R.id.minutesAtRate);
+        gpd = (TextView) findViewById(R.id.gpd);
+        timerValue = (TextView) findViewById(R.id.minutesAtRate);
         timerValue.setText(simpleDateFormat.format(0));
         Button startButton = (Button) findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
