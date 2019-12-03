@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:padding="10dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flowRateLabel"
+            android:id="@id/flowRateLabel" android:layout_gravity="center" android:textSize="@dimen/largeText"
+            android:padding="5dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/flowRate" android:layout_gravity="center"
+            android:textSize="@dimen/largeText" android:focusable="true"
+            android:enabled="true" android:editable="true" android:padding="5dp" android:inputType="numberDecimal"/>
+</LinearLayout>

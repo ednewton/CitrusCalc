@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:padding="5dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/describeTreeLabel"
+                android:id="@+id/describeTreeLabel" android:textSize="@dimen/largeText"
+                android:layout_weight=".90"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gear" android:layout_weight=".10"
+                android:src="@drawable/config" android:adjustViewBounds="true"
+                android:clickable="true" android:cropToPadding="false"
+                android:contentDescription="@string/flowRateDesc" android:scaleType="fitCenter"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:padding="5dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/diameterLabel"
+                android:id="@+id/diameterLabel" android:layout_weight=".7"
+                android:textSize="@dimen/mediumText" android:padding="5dp"/>
+        <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/diameterSpinner" android:layout_weight=".3"
+                android:gravity="center"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dp">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/typeLabel"
+                  android:id="@+id/typeLabel" android:textSize="@dimen/mediumText"
+                  android:padding="5dp" android:layout_weight=".5"/>
+        <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/typeSpinner" android:layout_weight=".5"
+                />
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dp"
+            >
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/gpdLabel"
+                  android:id="@+id/gpdLabel" android:textSize="@dimen/mediumText" android:padding="5dp"
+                  android:layout_weight=".7"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gpd" android:layout_weight=".3" android:autoText="false" android:padding="5dp"
+                android:textSize="@dimen/mediumText" android:editable="false" android:enabled="true"
+                android:clickable="false" android:gravity="center_horizontal" android:inputType="numberDecimal"
+                android:hint="@string/gpdLabel"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dp"
+            >
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/timerLabel"
+                  android:id="@+id/minutesLabel" android:textSize="@dimen/mediumText" android:padding="5dp"
+                  android:layout_weight=".7"/>
+        <EditText android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/minutesAtRate"
+                  android:layout_weight=".3" android:autoText="false" android:padding="5dp"
+                  android:textSize="@dimen/mediumText" android:editable="false" android:enabled="true"
+                  android:gravity="center_horizontal" android:inputType="time" android:hint="@string/timerLabel"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AZ Citrus Calc</string>
+    <string name="diameterLabel">Diameter (ft):</string>
+    <string name="typeLabel">Type:</string>
+    <string name="describeTreeLabel">Describe Tree</string>
+    <string name="gpdLabel">Required (gals/day):</string>
+    <string name="flowRateLabel">Flow rate (gals/min):</string>
+    <string name="timerLabel">Watering time (mm:ss):</string>
+    <string name="flowRateDesc">Flow rate configuration</string>
+    <string name="flowRateError"><![CDATA[Flow rate must be > 0.0]]></string>
+    <string name="okButtonText">OK</string>
+    <string name="cancelButtonText">Cancel</string>
+    <string name="startButtonText">Start</string>
+    <string name="pauseButtonText">Pause</string>
+    <string name="timerFinished">You can stop watering the tree now.</string>
+    <string name="timerAlertDialogTitle">Timer Finished</string>
+    <string-array name="diameter_array">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="type_array">
+        <item>Orange</item>
+        <item>Grapefruit</item>
+        <item>Lemon</item>
+        <item>Mandarin</item>
+    </string-array>
+</resources>
